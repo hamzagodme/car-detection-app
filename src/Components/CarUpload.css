@@ -1,0 +1,95 @@
+/* Container styling */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Card styling */
+.upload-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Heading */
+.upload-card h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+/* File Input */
+.upload-card input[type="file"] {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  margin-left: 100px;
+  width: 100%;
+}
+
+/* Submit Button */
+.upload-card button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Result styling */
+.result-container {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #e0f7fa;
+  border: 1px solid #b2ebf2;
+  border-radius: 8px;
+}
+
+.result-container h2 {
+  color: #00796b;
+}
+
+.result-container p {
+  color: #004d40;
+}
+
+/* Center the spinner on the page */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Spinner styling */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
